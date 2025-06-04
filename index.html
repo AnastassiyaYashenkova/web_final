@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie review platform</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+</head>
+
+
+<body>
+    
+  <header class="main-header">
+    <div class="menu-logo">
+      <div class="menu-button">&#9776;</div> 
+      <div class="logo-icon">🎬</div>
+      <h1 class="site-title">Movie Review Platform</h1>
+    </div>
+    
+    <div class="auth-buttons">
+      <button class="auth-btn"><a class="nav-link" href = "registration.html">Sign Up</a></button>
+      <button class="auth-btn"><a class="nav-link" href = "registration.html">Log In</a></button>
+    </div> 
+  </header>
+
+    
+<nav class="side-menu">
+  <ul>
+    <li class="nav-item"><a class="nav-link" href = "index.html">Main page</a></li>
+    <li class="nav-item"><a class="nav-link" href ="userCenter.html">User Center</a></li>
+    <li class="nav-item"><a class="nav-link" href ="recommendations.html">Recommendations</a></li>
+    <li class="nav-item"><a class="nav-link" href="awards.html">Awards & Events</a></li>
+    <li class="nav-item"><a class="nav-link" href ="admin.html">Administration</a></li>
+    <li class="nav-item"><a class="nav-link" href ="helpCenter.html">Help Center</a></li>
+  </ul>
+</nav>
+
+
+    <section class="search-section">
+      <input type="text" placeholder="Search movie..." class="search-bar" />
+    </section>
+
+    <section class="movie-section">
+        <h2 class="section-title">🎬 Welcome to Your Personalized Movie Hub!</h2>
+        <div class="movie-container">
+            <div class="movie-grid">
+    
+    
+                <div class="movie-card">
+                    <img loading="lazy" src="assets/img/movie18.jpg" alt="Movie 18" class="movie-img" />
+                    <div class="movie-info">
+                        <p class="rating"><span class="star">★</span> </p>
+                        <h3 class="movie-title">The Witch</h3>
+                        <button class="review-btn">View Reviews</button>
+                    </div>
+                </div>
+            
+    
+                <div class="movie-card">
+                    <img loading="lazy" src="assets/img/movie8.jpg" alt="Movie 8" class="movie-img" />
+                    <div class="movie-info">
+                        <p class="rating"><span class="star">★</span> </p>
+                        <h3 class="movie-title">Parasite</h3>
+                        <button class="review-btn">View Reviews</button>
+                    </div>
+                </div>
+            
+    
+                <div class="movie-card">
+                    <img loading="lazy" src="assets/img/movie3.jpg" alt="Movie 3" class="movie-img" />
+                    <div class="movie-info">
+                        <p class="rating"><span class="star">★</span> </p>
+                        <h3 class="movie-title">Shrek</h3>
+                        <button class="review-btn">View Reviews</button>
+                    </div>
+                </div>
+    
+    
+    
+                <div class="movie-card">
+                    <img loading="lazy" src="assets/img/movie9.jpg" alt="Movie 9" class="movie-img" />
+                    <div class="movie-info">
+                        <p class="rating"><span class="star">★</span> </p>
+                        <h3 class="movie-title">Interstellar</h3>
+                        <button class="review-btn">View Reviews</button>
+                    </div>
+                </div>
+    
+    
+    
+                <div class="movie-card">
+                    <img loading="lazy" src="assets/img/movie15.jpg" alt="Movie 15" class="movie-img" />
+                    <div class="movie-info">
+                        <p class="rating"><span class="star">★</span> </p>
+                        <h3 class="movie-title">Inside Out</h3>
+                        <button class="review-btn">View Reviews</button>
+                    </div>
+                </div>
+    
+    
+                <div class="movie-card">
+                    <img loading="lazy" src="assets/img/movie13.jpg" alt="Movie 13" class="movie-img" />
+                    <div class="movie-info">
+                        <p class="rating"><span class="star">★</span> </p>
+                        <h3 class="movie-title">Titanic</h3>
+                        <button class="review-btn">View Reviews</button>
+                    </div>
+                </div>
+    
+    
+    
+                <div class="movie-card">
+                    <img loading="lazy" src="assets/img/movie16.jpg" alt="Movie 16" class="movie-img" />
+                    <div class="movie-info">
+                        <p class="rating"><span class="star">★</span> </p>
+                        <h3 class="movie-title">Barbie</h3>
+                        <button class="review-btn">View Reviews</button>
+                    </div>
+                </div>
+    
+    
+            </div>
+        </div>
+      </section>
+
+
+
+
+       <section class="movie-section" id="trendingSection">
+       <h2 class="section-title">🔥 Trending Movies Today</h2>
+       <div class="movie-container">
+         <div class="movie-grid" id="trendingMovies"></div>
+       </div>
+       </section>
+
+
+      <div id="reviewModal">
+        <div class="modal-content">
+          <span class="close-btn">&times;</span>
+          <h3>Recent Reviews</h3>
+          <p>No reviews yet...</p>
+        </div>
+      </div>
+
+
+
+
+    
+    <script src="assets/js/main.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h2 class="every-title">🎲 Movie of the Day</h2>
+    <section class="logic-section">
+      <button id="generateMovieBtn" class="button">Find Your Lucky Movie</button>
+      <p id="generatedNumber"></p>
+      <p id="movieOfTheDay"></p>
+    </section>
+
+
+
+
+
+
+
+
+    <h2 class="every-title">🎬 Compare Movie Ratings</h2>
+    <section class="logic-section"> 
+      <label for="movieA">Choose Movie A:</label>
+      <select id="movieA"></select>
+    
+      <label for="movieB">Choose Movie B:</label>
+      <select id="movieB"></select>
+    
+      <button id="compareBtn" class="button">Compare</button>
+      <p id="comparisonResult"></p>
+    </section>
+
+
+
+
+
+
+
+
+    
+
+    <h2 class="every-title">📺 My Favorite Movies</h2>
+    <section class="logic-section">
+      <input type="text" id="newTitle" placeholder="Movie title" />
+      <input type="text" id="newGenre" placeholder="Genre" />
+      <input type="number" id="newRating" placeholder="Rating" min="0" max="10" step="0.1" />
+      <button id="addMovieBtn" class="button">Add</button>
+      <button id="deleteBtn" class="button">Delete</button>
+      <button id="editBtn" class="button">Update</button>
+      
+      <ul id="movieList"></ul>
+    </section>
+
+
+
+
+
+
+
+
+  
+
+    <footer class="site-footer">
+        <div class="footer-content">
+          <p>&copy; 2025 Movie Review Platform. All rights reserved.</p>
+          <div class="footer-links">
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <a href="https://t.me" target="_blank">Telegram</a>
+            <a href="mailto:support@moviereview.com">Email us</a>
+          </div>
+        </div>
+      </footer>
+
+
+
+  </body>
+  </html>
